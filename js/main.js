@@ -35,10 +35,10 @@ $(function() {
         var scroll = $(window).scrollTop();
         if (scroll < 245) {
             $(".navigation").removeClass("sticky");
-            $(".navigation-3 img").attr("src", "images/logo_ruby.png");
+            $(".navigation-3 img").attr("src", "images/logo/logo_ruby.png");
         } else {
             $(".navigation").addClass("sticky");
-            $(".navigation-3 img").attr("src", "images/logo_ruby.png");
+            $(".navigation-3 img").attr("src", "images/logo/logo_ruby.png");
         }
     });
 
