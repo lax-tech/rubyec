@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -40,7 +40,7 @@
         body {
             position: relative;
             height: 100vh;
-            background: linear-gradient(to bottom, #ad0000, #600606);
+            background: linear-gradient(to bottom, #ad0000, #550606);
             color: #f2f2f2;
         }
         
@@ -50,7 +50,7 @@
             height: 100%;
             justify-content: center;
             align-items: center;
-            margin: 0 20px;
+            margin: 0 24px;
         }
         
         h1 {
@@ -60,12 +60,14 @@
         
         h2 {
             font-size: 12px;
-            margin-bottom: 3px;
         }
         
         a {
             text-decoration: none;
+            color: #3775ba;
         }
+        
+        a {}
         
         .light {
             font-family: NexaLight, sans-serif;
@@ -78,7 +80,6 @@
         }
         
         .social {
-            margin-top: 10px;
             padding: 20px 0;
             display: flex;
             justify-content: space-between;
@@ -86,7 +87,7 @@
         }
         
         .social a {
-            font-size: 24px;
+            font-size: 27px;
             color: #a9a7a7;
         }
         
@@ -106,7 +107,16 @@
         
         footer div {
             border-top: 1px dashed silver;
-            padding: 8px 0;
+            padding: 8px 0 0;
+        }
+        
+        @keyframes rotate {
+            from {
+                transform: rotateZ(0deg);
+            }
+            to {
+                transform: rotateZ(360deg);
+            }
         }
     </style>
 </head>
@@ -117,18 +127,19 @@
             <div>
                 <img src="./images/logo/logo ruby b.png" height="100" alt="logo rubyEC">
                 <h1><span class="light">Site en </span> <span class="bold">développement</span> <i class="fa fa-shekel"></i></h1>
-                <p>Contactez-nous par:</p>
+                <div style="height: 3px; width: 50px; margin-bottom: 8px; background-color: #000000c5;"></div>
+                <p><i>Contactez-nous par:</i> </p>
                 <div class="social">
-                    <a href="#">
+                    <a href="https://api.whatsapp.com/send?phone=243810843164&text=Laxtech: RubyEC...">
                         <i class="fa fa-whatsapp"></i>
                     </a>
-                    <a href="#">
+                    <a href="https://api.whatsapp.com/send?phone=243810843164&text=Laxtech: RubyEC...">
                         <i class="fa fa-facebook"></i>
                     </a>
-                    <a href="#">
+                    <a href="https://api.whatsapp.com/send?phone=243810843164&text=Laxtech: RubyEC...">
                         <i class="fa fa-instagram"></i>
                     </a>
-                    <a href="#">
+                    <a href="https://api.whatsapp.com/send?phone=243810843164&text=Laxtech: RubyEC...">
                         <i class="fa fa-linkedin"></i>
                     </a>
                 </div>
@@ -137,8 +148,10 @@
     </main>
     <footer>
         <div>
-            <h2>Powered by Lax technologies</h2>
-            <img src="./images/logo/laxtech blanc.png" width="50" alt="">
+            <h2>Powered by <a href="https://www.laxtechnologies.com">Lax technologies</a></h2>
+            <a href="https://www.laxtechnologies.com">
+                <img src="./images/logo/icone 1L.png" style="background-color: #00000059; border-radius: 50%; animation: rotate 10s infinite 0s linear;" width="50" alt="">
+            </a>
         </div>
     </footer>
 </body>
