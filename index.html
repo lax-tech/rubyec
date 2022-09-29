@@ -58,10 +58,6 @@
             margin-bottom: 20px;
         }
         
-        h2 {
-            font-size: 12px;
-        }
-        
         a {
             text-decoration: none;
             color: #3775ba;
@@ -97,6 +93,34 @@
             text-shadow: -10px 7px 3px black;
         }
         
+        .lax-logo {
+            margin-right: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2px;
+        }
+        
+        .lax-logo span {
+            display: inline-block;
+            width: 50px;
+            background-color: #0000004e;
+            border-radius: 50%;
+            height: 20px;
+        }
+        
+        .lax-logo img {
+            display: inline-block;
+            margin-bottom: -15px;
+            animation: rotate 10s infinite 0s linear;
+        }
+        
+        .lax-logo:hover img {
+            animation: none;
+            transform: scale(1.2);
+            filter: contrast(200%);
+        }
+        
         footer {
             position: absolute;
             bottom: 0;
@@ -105,9 +129,20 @@
             width: 100%;
         }
         
-        footer div {
+        h2 {
+            font-size: 12px;
+            line-height: 100%;
+        }
+        
+        sub {
+            font-size: 10px;
+        }
+        
+        footer>div {
             border-top: 1px dashed silver;
-            padding: 8px 0 0;
+            padding: 0px 0 4px;
+            display: flex;
+            align-items: center;
         }
         
         @keyframes rotate {
@@ -126,7 +161,7 @@
         <div>
             <div>
                 <img src="./images/logo/logo ruby b.png" height="100" alt="logo rubyEC">
-                <h1><span class="light">Site en </span> <span class="bold">développement</span> <i class="fa fa-shekel"></i></h1>
+                <h1 class="light"><span class="light">Site en </span> <span class="bold">développement</span> <i class=" fa fa-gears"></i></h1>
                 <div style="height: 3px; width: 50px; margin-bottom: 8px; background-color: #000000c5;"></div>
                 <p><i>Contactez-nous par:</i> </p>
                 <div class="social">
@@ -148,10 +183,16 @@
     </main>
     <footer>
         <div>
-            <h2>Powered by <a href="https://www.laxtechnologies.com">Lax technologies</a></h2>
-            <a href="https://www.laxtechnologies.com">
-                <img src="./images/logo/icone 1L.png" style="background-color: #00000059; border-radius: 50%; animation: rotate 10s infinite 0s linear;" width="50" alt="">
-            </a>
+            <div>
+                <a class="lax-logo" href="https://www.laxtechnologies.com">
+                    <img src="./images/logo/icone 1L.png" width="50" alt="">
+                    <span></span>
+                </a>
+            </div>
+            <div>
+                <h2>Powered by <a href="https://www.laxtechnologies.com">Lax technologies</a></h2>
+                <sub>Made with ❤️ for you</sub>
+            </div>
         </div>
     </footer>
 </body>
